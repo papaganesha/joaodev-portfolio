@@ -1,4 +1,4 @@
-import heroPhoto from '../assets/images/hero-photo.png'
+import heroPhoto from '../assets/images/hero-photo.webp'
 import heroBg from '../assets/images/hero-bg.jpg'
 import './Hero.css'
 
@@ -16,7 +16,6 @@ export default function Hero() {
             <span className="hero-badge-dot" />
             Disponível para novos projetos
           </span>
-          <p className="hero-greeting">Olá, eu sou</p>
           <h1 className="hero-title">João <span className="hero-title-accent">Dev</span></h1>
           <h2 className="hero-subtitle">Desenvolvedor Web</h2>
           <p className="hero-description">
