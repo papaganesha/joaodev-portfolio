@@ -15,7 +15,7 @@
   z-index: 0;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(10, 14, 23, 0.82) 0%, rgba(13, 21, 38, 0.55) 45%, rgba(14, 26, 48, 0.72) 100%),
+    linear-gradient(180deg, rgba(10, 14, 23, 0.88) 0%, rgba(11, 18, 33, 0.72) 40%, rgba(12, 22, 42, 0.6) 70%, rgba(14, 26, 48, 0.72) 100%),
     url('../assets/cta-skyline.jpg') no-repeat center bottom / cover;
   -webkit-mask-image: linear-gradient(to top, #000 68%, transparent 100%);
   mask-image: linear-gradient(to top, #000 68%, transparent 100%);
@@ -39,12 +39,14 @@
 }
 
 .cta-sub {
-  color: var(--fg-muted);
+  color: #dbe4f0;
   margin-top: var(--space-md);
   font-size: 1.06rem;
   line-height: 1.7;
   max-width: 48ch;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
 }
+.cta-title { text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5); }
 
 .cta-btn {
   margin-top: var(--space-xl);
