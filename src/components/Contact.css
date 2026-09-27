@@ -1,0 +1,122 @@
+.contact {
+  padding: var(--space-3xl) 0;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.contact-lead {
+  color: var(--fg-muted);
+  margin-top: var(--space-md);
+  font-size: 1.06rem;
+  line-height: 1.7;
+  max-width: 42ch;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.ci-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+a.ci-link:hover { color: #fff; }
+a.ci-link:hover .ci {
+  background: var(--accent);
+  color: #fff;
+}
+.ci-static { cursor: default; }
+.ci {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-glow);
+  color: var(--accent-light);
+  flex-shrink: 0;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.field span {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: var(--fg-muted);
+}
+
+.field input,
+.field select,
+.field textarea {
+  font-family: var(--font);
+  font-size: 0.95rem;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+.field input::placeholder,
+.field textarea::placeholder { color: var(--fg-dim); }
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.contact-submit {
+  margin-top: var(--space-xs);
+  justify-content: center;
+  width: 100%;
+}
+.contact-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.contact-note {
+  font-size: 0.813rem;
+  color: var(--fg-dim);
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
