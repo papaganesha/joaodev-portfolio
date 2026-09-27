@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { CONTATO, whatsappLink } from '../data/contato'
-import { WhatsAppIcon, InstagramIcon, MailIcon, GithubIcon, PinIcon } from './Icons'
+import { WhatsAppIcon, MailIcon, GithubIcon } from './Icons'
 import './Contact.css'
 
 const servicos = [
@@ -44,7 +44,7 @@ export default function Contact() {
               <li>
                 <a href={whatsappLink()} target="_blank" rel="noopener" className="ci-link">
                   <span className="ci"><WhatsAppIcon width="18" height="18" /></span>
-                  WhatsApp
+                  <span className="ci-value">WhatsApp</span>
                 </a>
               </li>
             )}
@@ -52,15 +52,7 @@ export default function Contact() {
               <li>
                 <a href={`mailto:${CONTATO.email}`} className="ci-link">
                   <span className="ci"><MailIcon width="18" height="18" /></span>
-                  {CONTATO.email}
-                </a>
-              </li>
-            )}
-            {CONTATO.instagram && (
-              <li>
-                <a href={`https://instagram.com/${CONTATO.instagram}`} target="_blank" rel="noopener" className="ci-link">
-                  <span className="ci"><InstagramIcon width="18" height="18" /></span>
-                  @{CONTATO.instagram}
+                  <span className="ci-value">{CONTATO.email}</span>
                 </a>
               </li>
             )}
@@ -68,14 +60,8 @@ export default function Contact() {
               <li>
                 <a href={`https://github.com/${CONTATO.github}`} target="_blank" rel="noopener" className="ci-link">
                   <span className="ci"><GithubIcon width="18" height="18" /></span>
-                  github.com/{CONTATO.github}
+                  <span className="ci-value">github.com/{CONTATO.github}</span>
                 </a>
-              </li>
-            )}
-            {CONTATO.cidade && (
-              <li className="ci-link ci-static">
-                <span className="ci"><PinIcon width="18" height="18" /></span>
-                {CONTATO.cidade}
               </li>
             )}
           </ul>

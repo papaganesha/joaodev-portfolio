@@ -1,5 +1,5 @@
 import { CONTATO } from '../data/contato'
-import { WhatsAppIcon, InstagramIcon, MailIcon, PinIcon } from './Icons'
+import { WhatsAppIcon, MailIcon, GithubIcon } from './Icons'
 import './About.css'
 
 const stats = [
@@ -54,20 +54,13 @@ export default function About() {
               <span className="about-row-value">{CONTATO.email}</span>
             </span>
           </a>
-          <a className="about-row" href={`https://instagram.com/${CONTATO.instagram}`} target="_blank" rel="noopener">
-            <span className="about-row-icon"><InstagramIcon width="20" height="20" /></span>
+          <a className="about-row" href={`https://github.com/${CONTATO.github}`} target="_blank" rel="noopener">
+            <span className="about-row-icon"><GithubIcon width="20" height="20" /></span>
             <span className="about-row-text">
-              <span className="about-row-label">Instagram</span>
-              <span className="about-row-value">@{CONTATO.instagram}</span>
+              <span className="about-row-label">GitHub</span>
+              <span className="about-row-value">github.com/{CONTATO.github}</span>
             </span>
           </a>
-          <div className="about-row about-row-static">
-            <span className="about-row-icon"><PinIcon width="20" height="20" /></span>
-            <span className="about-row-text">
-              <span className="about-row-label">Onde atendo</span>
-              <span className="about-row-value">Remoto — mundo todo</span>
-            </span>
-          </div>
 
           <a href="#contato" className="btn btn-primary about-card-cta">Pedir orçamento</a>
         </aside>

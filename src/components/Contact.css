@@ -33,6 +33,11 @@
   color: var(--fg-muted);
   font-size: 0.95rem;
   transition: color 0.2s ease;
+  min-width: 0;
+}
+.ci-value {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 a.ci-link:hover { color: #fff; }
 a.ci-link:hover .ci {

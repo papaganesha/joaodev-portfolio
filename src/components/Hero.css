@@ -200,12 +200,20 @@
     text-align: center;
     align-content: center;
     min-height: 100dvh;
-    padding-top: calc(var(--nav-h) + var(--space-xl));
+    padding-top: calc(var(--nav-h) + var(--space-lg));
     padding-bottom: var(--space-2xl);
+    gap: var(--space-sm);
   }
 
-  .hero-content { padding: 0; }
-  .hero-image { display: none; }
+  .hero-content { order: 1; padding: 0; }
+  .hero-image {
+    order: 0;
+    display: flex;
+    align-self: center;
+    height: auto;
+    padding-top: 0;
+  }
+  .hero-photo { max-height: 40vh; }
 
   .hero-description { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
@@ -235,5 +243,5 @@
   }
 
   .hero-title { font-size: 2.25rem; }
-  .hero-photo { max-height: 28vh; }
+  .hero-photo { max-height: 34vh; }
 }
