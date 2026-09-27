@@ -224,14 +224,14 @@
     flex-wrap: wrap;
   }
 
+  .hero-bg-img { object-position: center 20%; }
   .hero-bg-overlay {
     background:
-      radial-gradient(80% 45% at 50% 30%, rgba(10, 14, 23, 0.55) 0%, rgba(10, 14, 23, 0.9) 100%),
       linear-gradient(180deg,
-        rgba(10, 14, 23, 0.9) 0%,
-        rgba(10, 14, 23, 0.86) 45%,
-        rgba(10, 14, 23, 0.92) 72%,
-        rgba(10, 14, 23, 0.99) 100%
+        rgba(10, 14, 23, 0.55) 0%,
+        rgba(10, 14, 23, 0.5) 42%,
+        rgba(10, 14, 23, 0.72) 70%,
+        rgba(10, 14, 23, 0.95) 100%
       );
   }
 }

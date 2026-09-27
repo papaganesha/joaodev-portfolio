@@ -16,7 +16,7 @@
   pointer-events: none;
   background:
     linear-gradient(180deg, rgba(10, 14, 23, 0.88) 0%, rgba(11, 18, 33, 0.72) 40%, rgba(12, 22, 42, 0.6) 70%, rgba(14, 26, 48, 0.72) 100%),
-    url('../assets/cta-skyline.jpg') no-repeat center bottom / cover;
+    url('../assets/cta-skyline.jpg') no-repeat center 45% / cover;
   -webkit-mask-image: linear-gradient(to top, #000 68%, transparent 100%);
   mask-image: linear-gradient(to top, #000 68%, transparent 100%);
 }

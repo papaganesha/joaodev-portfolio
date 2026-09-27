@@ -6,7 +6,7 @@
 
 .contact-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--space-3xl);
   align-items: start;
 }
@@ -67,13 +67,18 @@ a.ci-link:hover .ci {
   border-radius: var(--radius-lg);
   background: var(--bg-card);
   border: 1px solid var(--border);
+  min-width: 0;
 }
 
 .field {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+  min-width: 0;
 }
+.field input,
+.field select,
+.field textarea { min-width: 0; width: 100%; max-width: 100%; box-sizing: border-box; }
 .field span {
   font-size: 0.813rem;
   font-weight: 500;
@@ -121,7 +126,7 @@ a.ci-link:hover .ci {
 
 @media (max-width: 800px) {
   .contact-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-2xl);
   }
 }
