@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <section className="cta-band">
       <div className="section-inner cta-inner">
-        <h2 className="cta-title">Pronto pra colocar a tecnologia pra trabalhar pelo seu negócio?</h2>
+        <h2 className="cta-title">Pronto para colocar a tecnologia a favor do seu negócio?</h2>
         <p className="cta-sub">
           Preço justo, comunicação direta e foco total no seu projeto — do
           primeiro contato à entrega.

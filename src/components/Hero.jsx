@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
 
           <div className="hero-stats">
-            <Stat icon="check" value="Feito pra vender" label="foco em resultado" />
+            <Stat icon="check" value="Feito para vender" label="foco em resultado" />
             <Stat icon="clock" value="Resposta rápida" label="direto no WhatsApp" />
             <Stat icon="globe" value="Sob medida" label="site ou sistema" />
           </div>

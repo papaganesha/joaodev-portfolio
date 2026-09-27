@@ -40,9 +40,9 @@ export default function Services() {
       <div className="section-inner">
         <div className="services-head">
           <p className="eyebrow">O que eu faço</p>
-          <h2 className="section-title">Serviços sob medida pro seu objetivo</h2>
+          <h2 className="section-title">Serviços sob medida para o seu objetivo</h2>
           <p className="services-sub">
-            Escolha o que faz sentido pra você — ou me chama que a gente monta a
+            Escolha o que faz sentido para você — ou fale comigo que montamos a
             solução ideal juntos.
           </p>
         </div>
